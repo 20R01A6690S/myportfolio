@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>contactpage</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+ </head>
+ <body>
+    
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><ion-icon name="mail-sharp"> </ion-icon>sriharsha6690@gmail.com</p>
+            <p><i><ion-icon name="call-sharp"></ion-icon></i>9398450519</p>
+            <div class="social-icons">
+                <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                <a href="https://www.linkedin.com/in/sri-harsha-krovvidi-099253229/"><ion-icon name ="logo-linkedin"></ion-icon></i></a>
+                <a href="https://www.instagram.com/_harshaa_21/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://twitter.com/harshaa21"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+            <a href="file:///C:/Users/sriha/OneDrive/Documents/MY%20DOCUMENNTS/Harsha%20resume.pdf" download class="btn btn2">Download</a>
+            </div>  
+            <div class="contact-right">
+                <form>
+                <input type="text" name="Name" placeholder="your Name" required>
+                <input type="email" name="email" placeholder="your Email" required>  
+                <textarea name="Message"  rows="10" placeholder="Your Message"></textarea>
+                <button type="Submit">Submit</button>
+
+                
+                </form>
+            </div>  
+            </div>
+        </div>
+    </div>
+
+
+
+    <style>
+        .contact-left{
+            flex-basis: 35%;
+
+        }
+        .contact-right{
+            flex-basis: 60%;
+        }
+        .contact-left p{
+            margin-top: 30px;
+
+        }
+        .contact-left p i{
+            color: black;
+            margin-right: 15px;
+            font-size: 30px;
+
+
+        }
+        .social-icons a{
+            text-decoration: none;
+            font-size: 30px;
+            margin-right: 15px;
+            color: black;
+            display: inline-block;
+            transition: transform 0.5s;
+        }
+        .social-icons a:hover{
+            color: blueviolet;
+            transform: translate(5px);
+
+        }
+        .btn.btn2{
+            display: inline-block;
+            background: #8000ff5e;
+        }
+        .contact-right form{
+            width: 100%;
+
+        }
+        form input,form textarea{
+            width: 100%;
+            border: 0;
+            outline: none;
+            background: #262626;
+            padding: 15px;
+            margin: 15px 0;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 6px;
+       }
+       form .btn2{
+        padding: 14px 60px;
+        font-size: 18px;
+        margin-top: 20px;
+        cursor: pointer;
+
+       }
+    </style>
+    
+ </body>
+ </html>

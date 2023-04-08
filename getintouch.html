@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>get in touch</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='getintouch.css'>
+    <script src='main.js'></script>
+    
+</head>
+<body>
+    <div class="container">
+    <form onsubmit="sendEmail(); reset(); return false; ">
+        <h3>GET IN TOUCH</h3>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Email id" required>
+        <input type="text" id="phone" placeholder="Mobile no." required>
+        <textarea id="message" rows="4" placeholder="Message me"></textarea>
+        <button type="submit">Send</button>
+        
+    </form>
+</div>
+<script src=" https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+           secureToken:"6df71be7-c34b-45c8-8646-063ed4333f46",
+           
+          
+           To : 'sriharsha6690@gmail.com',
+           From : document.getElementById("email").value,
+           Subject : "New Contact form enquiry",
+           Body : "Name: " + document.getElementById("name").value
+           + "<br> Email: " + document.getElementById("email") .value
+           + "<br> Phone no: " + document.getElementById("phone").value
+           + "<br> Message: " + document.getElementById("message").value    
+        }).then(
+        message => alert("Message Sent Successfully")
+        );
+
+    }
+    
+</script>
+
+</body>
+</html>
